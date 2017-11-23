@@ -39,3 +39,26 @@
   +hide-xs
   +hide-sm
   +hide-md
+
+@for $i from 1 through 12
+  .col-xs-#{$i}
+    position: relative
+    min-height: 1px
+    float: left
+    width: $i/12*100%
+
+@for $i from 1 through 12
+  .col-sm-#{$i}
+    position: relative
+    min-height: 1px
+    float: left
+    +min-width-sm
+      width: $i/12*100%
+
+@for $i from 1 through 12
+  .col-md-#{$i}
+    position: relative
+    min-height: 1px
+    float: left
+    +min-width-md
+      width: $i/12*100%
