@@ -1,4 +1,8 @@
 
+@mixin with-body-class($class)
+  body.#{$class} &
+    @content
+
 @mixin clearfix
   &:before, &:after
     content: " "
