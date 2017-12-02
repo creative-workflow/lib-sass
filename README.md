@@ -2,6 +2,15 @@
 
 ### Setup
 ```
+bower install --save creative-workflow.sass
+
+or
+
+composer require creative-workflow/sass
+
+or
+
+
 git submodule add https://github.com/creative-workflow/lib-sass.git ./wordpress/wp-content/themes/child/lib/cw/sass
 ```
 
