@@ -38,6 +38,14 @@
     .et_pb_column_#{$nr}
       @content
 
+@mixin divi-module($class: '')
+  @if $class == ''
+    .et_pb_module
+      @content
+  @else
+    .et_pb_module.#{$class}
+      @content
+
 // container
 @mixin divi-container
   .et_pb_container
