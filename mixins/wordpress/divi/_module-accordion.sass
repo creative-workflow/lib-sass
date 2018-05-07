@@ -1,0 +1,23 @@
+@mixin divi-module-accordion($nr: '')
+	@if $nr == ''
+		.et_pb_accordion
+			@content
+	@else
+		.et_pb_accordion_#{$nr}
+			@content
+
+@mixin divi-accordion-toggle
+	.et_pb_toggle
+		@content
+
+@mixin divi-toggle
+	.et_pb_toggle
+		@content
+
+@mixin divi-toggle-title
+	.et_pb_toggle_title
+		@content
+
+@mixin divi-toggle-content
+	.et_pb_toggle_content
+		@content

@@ -1,0 +1,15 @@
+@mixin divi-module-promo($nr: '')
+  @if $nr == ''
+    .et_pb_promo
+      @content
+  @else
+    .et_pb_promo_#{$nr}
+      @content
+
+@mixin divi-promo-description
+  .et_pb_promo_description
+    @content
+
+@mixin divi-promo-button
+  .et_pb_promo_button
+    @content

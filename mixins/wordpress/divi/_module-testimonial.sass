@@ -1,0 +1,19 @@
+@mixin divi-module-testimonial($nr: '')
+	@if $nr == ''
+		.et_pb_testimonial
+			@content
+	@else
+		.et_pb_testimonial_#{$nr}
+			@content
+
+@mixin divi-testimonial-description
+	.et_pb_testimonial_description
+		@content
+
+@mixin divi-testimonial-author
+	.et_pb_testimonial_author
+		@content
+
+@mixin divi-testimonial-meta
+	.et_pb_testimonial_meta
+		@content
