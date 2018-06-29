@@ -1,19 +1,19 @@
 @mixin divi-module-blurb($nr: '')
-	@if $nr == ''
-		.et_pb_blurb
-			@content
-	@else
-		.et_pb_blurb_#{$nr}
-			@content
+  @if $nr == ''
+    .et_pb_blurb
+      @content
+  @else
+    .et_pb_blurb_#{$nr}
+      @content
 
 @mixin divi-blurb-content
-	.et_pb_blurb_content
-		@content
+  .et_pb_blurb_content
+    @content
 
 @mixin divi-blurb-image
   .et_pb_main_blurb_image
-		@content
+    @content
 
 @mixin divi-blurb-container
-	.et_pb_blurb_container
-		@content
+  .et_pb_blurb_container
+    @content
