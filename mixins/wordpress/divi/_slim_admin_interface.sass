@@ -36,7 +36,6 @@
   background-color: #fff !important
   color: #008bdb !important
 
-
 .et_pb_modal_settings_container
   box-shadow: 10px 10px 48px 15px rgba(0,0,0,0.26) !important
   .et-pb-main-settings
@@ -100,16 +99,18 @@
       border-bottom: 1px solid #008bdb
 
     .et-pb-option
-      padding: 6px 0 !important
       .description
         margin-top: 1px !important
       > label
         font-weight: 500 !important
 
-      input, select
+      input:not(.et-pb-range), select
         background-color: #fff
         border: 1px solid #ddd
         box-shadow: inset 1px 1px 5px rgba(0,0,0,.05)
+
+body .et-pb-option
+  padding: 6px 0
 
 .et-pb-preview-screensize-switcher, .et-pb-options-tabs-links
   top: -60px !important
