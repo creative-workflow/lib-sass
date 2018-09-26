@@ -98,7 +98,7 @@
       > label
         font-weight: 500 !important
 
-      input:not(.et-pb-range), select
+      input[type='text'],input[type='upload'], select, textarea
         background-color: #fff
         border: 1px solid #ddd
         box-shadow: inset 1px 1px 5px rgba(0,0,0,.05)
@@ -108,3 +108,7 @@ body .et-pb-option
 
 .et-pb-preview-screensize-switcher, .et-pb-options-tabs-links
   top: -60px !important
+
+// show hidden file inputs
+.et_pb_background-tab--image .et-pb-option--has-preview .et-pb-upload-field, .et_pb_background-tab--image .et-pb-option--has-preview .et-pb-upload-button, .et_pb_background-tab--video .et-pb-option--has-preview .et-pb-upload-field, .et_pb_background-tab--video .et-pb-option--has-preview .et-pb-upload-button, .et_pb_background-tab--video .et-pb-option--has-preview .et-pb-reset-setting
+  display: inline-block !important
