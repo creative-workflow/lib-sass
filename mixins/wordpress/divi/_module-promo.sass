@@ -6,6 +6,15 @@
     .et_pb_promo_#{$nr}
       @content
 
+@mixin divi-module-cta($nr: '')
+  @if $nr == ''
+    .et_pb_cta
+      @content
+  @else
+    .et_pb_cta_#{$nr}
+      @content
+
+
 @mixin divi-promo-description
   .et_pb_promo_description
     @content
