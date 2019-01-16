@@ -1,0 +1,15 @@
+@mixin divi-module-counter($nr: '')
+  @if $nr == ''
+    .et_pb_number_counter
+      @content
+  @else
+    .et_pb_number_counter_#{$nr}
+      @content
+
+@mixin percent
+  .percent
+    @content
+
+@mixin percent-value
+  .percent-value
+    @content
