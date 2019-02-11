@@ -1,0 +1,315 @@
+$admin-color-blue: #244d9d !default
+$admin-color-blue-rgba-50: rgba(36, 77, 157, 0.5) !default
+$admin-color-gray-dark: #7c7c7c !default
+$admin-color-gray-light: #F8F8F8 !default
+$admin-color-orange: #F5B016 !default
+
+body
+  background-color: $admin-color-gray-light !important
+
+#wpwrap
+  top: 40px !important
+
+#adminmenuwrap, #adminmenuback
+  background-color: $admin-color-gray-light !important
+  width: 200px !important
+
+#wpcontent
+  padding-left: 0 !important
+  margin-left: 200px
+
+#wpadminbar
+  background-color: $admin-color-gray-light !important
+  padding: 20px 0 !important
+  height: 70px !important
+
+  #wp-admin-bar-my-account
+    a
+      &:before
+        font-size: 50px !important
+        top: -14px
+        margin-left: 20px
+
+  li
+    padding: 0 4px !important
+
+  a
+    color: $admin-color-gray-dark !important
+    &:hover
+      background-color: $admin-color-blue !important
+
+  .ab-label, .ab-item:before, .ab-icon:before
+    color: $admin-color-gray-dark !important
+
+#adminmenu
+  background-color: $admin-color-gray-light !important
+  width: 200px !important
+
+  .wp-submenu
+    background-color: $admin-color-blue !important
+    width: 200px !important
+    left: 200px
+
+    li
+      a
+        color: white !important
+        left: 200px !important
+
+
+  li
+    &.menu-top:hover, &.opensub>a.menu-top, &>a.menu-top:focus
+      background-color: $admin-color-blue !important
+      color: white !important
+
+    &.wp-has-current-submenu
+      color: white !important
+
+      .wp-menu-image
+        &:before
+          color: white !important
+
+      .wp-submenu
+        background-color: $admin-color-blue !important
+
+        a
+          color: white !important
+
+  a
+    color: $admin-color-gray-dark !important
+
+    &.wp-has-current-submenu
+      color: white !important
+      background-color: $admin-color-blue-rgba-50 !important
+      font-weight: bold !important
+
+  .wp-menu-image
+    &:before
+      color: $admin-color-gray-dark !important
+
+#wpbody
+  background-color: white !important
+  padding-left: 30px !important
+  padding-top: 16px !important
+
+  #dashboard-widgets-wrap
+    .postbox-container
+      width: 80% !important
+
+    .postbox
+      border: 0
+      box-shadow: none !important
+
+      .inside
+        +headlines
+          color: $admin-color-blue !important
+
+    .wrap
+      border: 1px solid white !important
+
+  .postbox-container
+    .postbox
+      +headlines
+        color: $admin-color-blue !important
+        background-color: $admin-color-gray-light !important
+
+      #et_pb_layout_controls
+        background-color: $admin-color-gray-light !important
+
+        .et-pb-layout-buttons
+          background-color: $admin-color-gray-light !important
+
+      .inside
+        .et_pb_section
+          background-color: $admin-color-gray-light !important
+
+          .et-pb-controls
+            background-color: $admin-color-blue !important
+          a
+            &.et-pb-settings, &.et-pb-clone-section, &.et-pb-remove, &.et-pb-expand
+              color: white !important
+              opacity: 1 !important
+            &.et-pb-section-add
+              color: $admin-color-gray-dark !important
+
+        .et_pb_row
+          a
+            &.et-pb-settings, &.et-pb-clone-row, &.et-pb-remove, &.et-pb-expand, &.et-pb-change-structure
+              color: white !important
+              opacity: 1 !important
+
+          background-color: white !important
+
+          .et-pb-controls
+            background-color: $admin-color-orange !important
+
+        .et-pb-row-content
+          .et-pb-column
+            .et_pb_module_block
+              background-color: $admin-color-gray-light !important
+              color: $admin-color-gray-dark !important
+              a
+                color: $admin-color-gray-dark !important
+                opacity: 1 !important
+
+
+  table
+    border: 0 !important
+    margin-top: 50px !important
+
+    thead
+
+    tbody
+      tr
+        &:nth-child(odd)
+          background-color: $admin-color-gray-light !important
+
+        &.quick-edit-row
+          td
+            padding: 20px 0 !important
+
+            .submit
+              float: left !important
+
+        td
+
+          .inline-edit-legend
+            color: $admin-color-blue !important
+
+          input
+            border: 1px solid white !important
+            box-shadow: none !important
+
+          .button-primary
+            color: white !important
+            background-color: $admin-color-blue !important
+            border: 1px solid $admin-color-blue !important
+            box-shadow: none !important
+            text-shadow: none !important
+            &:hover
+              color: $admin-color-blue !important
+              background-color: white !important
+
+          .button
+            &.cancel
+              border: 0
+              box-shadow: none !important
+              color: $admin-color-blue !important
+              &:hover
+                background-color: $admin-color-blue !important
+                color: white !important
+
+          select
+            color: $admin-color-blue !important
+            border: 1px solid $admin-color-blue !important
+            line-height: 34px !important
+            height: 34px !important
+
+
+  .search-box
+    input
+      color: $admin-color-blue !important
+      border: 1px solid $admin-color-blue !important
+      line-height: 24px
+      height: 24px
+
+    .button
+      color: $admin-color-blue !important
+      border: 1px solid $admin-color-blue !important
+      background-color: $admin-color-blue !important
+      color: white !important
+      line-height: 24px
+      height: 24px
+      &:hover
+        color: $admin-color-blue !important
+        background-color: white !important
+
+  .tablenav
+    select
+      color: $admin-color-blue !important
+      border: 1px solid $admin-color-blue !important
+      line-height: 36px
+      height: 36px
+
+    .button
+      color: $admin-color-blue !important
+      border: 1px solid $admin-color-blue !important
+      background-color: $admin-color-blue !important
+      color: white !important
+      line-height: 36px
+      height: 36px
+      box-shadow: none !important
+      &:hover
+        color: $admin-color-blue !important
+        background-color: white !important
+
+  .wp-heading-inline
+    color: $admin-color-blue !important
+    padding-right: 24px !important
+
+  a
+    color: $admin-color-blue !important
+    &.page-title-action
+      border: 1px solid $admin-color-blue !important
+      background-color: white !important
+      padding: 6px 16px !important
+      &:hover
+        color: white !important
+        background-color: $admin-color-blue !important
+
+  .wp-filter
+    border: 1px solid white !important
+    margin-bottom: 30px !important
+
+    select, input
+      color: $admin-color-blue !important
+      border: 1px solid $admin-color-blue !important
+
+    button
+      color: $admin-color-blue !important
+      border: 1px solid $admin-color-blue !important
+
+  .thumbnail
+    border: 1px solid $admin-color-blue-rgba-50 !important
+
+  .screen-meta-toggle
+    button
+      color: $admin-color-blue !important
+      border: 1px solid $admin-color-blue !important
+      box-shadow: none !important
+      box-shadow: 0 1px 0 #fff !important
+      -webkit-box-shadow: 0 1px 0 #fff !important
+      &:after
+        color: $admin-color-blue !important
+
+  .attachments-browser
+
+    +headlines
+      color: $admin-color-blue !important
+    p
+      color: $admin-color-blue !important
+
+    .uploader-inline
+      border: 2px dashed $admin-color-orange !important
+
+    button
+      &.browser
+        background-color: $admin-color-orange !important
+        color: white !important
+        border: 1px solid $admin-color-orange !important
+        box-shadow: none !important
+        &:hover
+          background-color: white !important
+          color: $admin-color-orange !important
+
+  .media-toolbar
+    .media-button
+      background-color: $admin-color-blue !important
+      color: white !important
+      box-shadow: none !important
+      &:hover
+        background-color: white !important
+        color: $admin-color-blue !important
+
+
+#wpfooter
+  margin-left: 200px
