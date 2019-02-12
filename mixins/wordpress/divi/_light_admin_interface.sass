@@ -7,6 +7,9 @@ $admin-color-orange: #F5B016 !default
 body
   background-color: $admin-color-gray-light !important
 
+  .post-type-slider
+
+
 #wpwrap
   top: 40px !important
 
@@ -23,6 +26,9 @@ body
   padding: 20px 0 !important
   height: 70px !important
 
+  #wp-admin-bar-view, #wp-admin-bar-new_draft
+    display: none
+
   #wp-admin-bar-my-account
     a
       &:before
@@ -32,6 +38,11 @@ body
 
   li
     padding: 0 4px !important
+    &#wp-admin-bar-my-account
+      &:hover
+        background-color: white !important
+      .ab-sub-wrapper
+        background-color: white !important
 
     &#wp-admin-bar-wp-logo
       pointer-events: none
@@ -56,7 +67,7 @@ body
   a
     color: $admin-color-gray-dark !important
     &:hover
-      background-color: $admin-color-blue !important
+      background-color: white !important
 
   .ab-label, .ab-item:before, .ab-icon:before
     color: $admin-color-gray-dark !important
@@ -123,6 +134,7 @@ body
   background-color: white !important
   padding-left: 30px !important
   padding-top: 16px !important
+  box-shadow: inset 0 0 10px rgba(0,0,0,.15)
 
   #wpbody-content
     .wrap
@@ -146,19 +158,42 @@ body
     .wrap
       border: 1px solid white !important
 
+
+  #post-body-content
+    .et-pb-app-settings-button, .et-pb-app-portability-button, .handlediv
+      display: none
+
+    .hndle
+      display: none
+      box-shadow: none
+      &:before
+        display: none
+      span
+        display: none
+
   #et_pb_layout
+
     &.postbox
       +headlines
         color: $admin-color-blue !important
-        background-color: $admin-color-gray-light !important
+        background-color: white !important
+
+      #et_pb_main_container_right_click_overlay
+        box-shadow: none
 
       #et_pb_layout_controls
-        background-color: $admin-color-gray-light !important
+        background-color: white !important
+        a
+          &.et-pb-layout-buttons
+            font-size: 12px !important
+            color: $admin-color-gray-dark !important
+            background-color: white !important
 
         .et-pb-layout-buttons
           background-color: $admin-color-gray-light !important
 
       .inside
+        width: 100%
         .et_pb_section
           background-color: $admin-color-gray-light !important
 
@@ -170,6 +205,9 @@ body
               opacity: 1 !important
             &.et-pb-section-add
               color: $admin-color-gray-dark !important
+
+              .et-pb-section-add-fullwidth, .et-pb-section-add-specialty
+                display: none
 
         .et_pb_row
           a
