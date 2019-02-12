@@ -33,6 +33,10 @@ body
   li
     padding: 0 4px !important
 
+  li
+    &#wp-admin-bar-wp-logo
+      display: none
+
   a
     color: $admin-color-gray-dark !important
     &:hover
@@ -90,6 +94,8 @@ body
   background-color: white !important
   padding-left: 30px !important
   padding-top: 16px !important
+  box-shadow: inset 3px 3px 5px rgba(0,0,0,.1)
+
 
   #dashboard-widgets-wrap
     .postbox-container
@@ -150,6 +156,26 @@ body
               a
                 color: $admin-color-gray-dark !important
                 opacity: 1 !important
+
+  #postbox-container-1
+
+    #et_settings_meta_box
+
+
+    #et_settings_meta_box, #submitdiv
+      margin-bottom: 50px
+      border: none
+      +headlines
+        color: $admin-color-blue
+
+      label
+        color: $admin-color-blue
+
+      select,
+        border: 1px solid $admin-color-blue
+        color: $admin-color-blue
+        height: 32px
+        line-height: 32px
 
 
   table
