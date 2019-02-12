@@ -33,6 +33,13 @@ body
   li
     padding: 0 4px !important
 
+    &#wp-admin-bar-site-name
+      pointer-events: none
+      margin-left: 220px
+
+    &#wp-admin-bar-wp-logo, &#wp-admin-bar-comments, &#wp-admin-bar-new-content
+      display: none
+
   a
     color: $admin-color-gray-dark !important
     &:hover
@@ -60,6 +67,15 @@ body
     &.menu-top:hover, &.opensub>a.menu-top, &>a.menu-top:focus
       background-color: $admin-color-blue !important
       color: white !important
+
+    a
+      &.current
+        background-color: $admin-color-blue !important
+        color: white !important
+
+        .wp-menu-image
+          &:before
+            color: white !important
 
     &.wp-has-current-submenu
       color: white !important
@@ -90,6 +106,9 @@ body
   background-color: white !important
   padding-left: 30px !important
   padding-top: 16px !important
+
+  #screen-meta-links
+    display: none
 
   #dashboard-widgets-wrap
     .postbox-container
