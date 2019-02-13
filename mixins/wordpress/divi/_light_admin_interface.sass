@@ -13,9 +13,18 @@ body
 #wpwrap
   top: 40px !important
 
+// fix left menu folded
+body:not(.folded)
+  #adminmenuwrap, #adminmenuback
+    width: 200px !important
+
+  #adminmenu
+    width: 200px !important
+  .wp-submenu
+    width: 200px !important
+
 #adminmenuwrap, #adminmenuback
   background-color: $admin-color-gray-light !important
-  width: 200px !important
 
 #wpcontent
   padding-left: 0 !important
@@ -74,7 +83,6 @@ body
 
 #adminmenu
   background-color: $admin-color-gray-light !important
-  width: 200px !important
 
   .collapse-button-label
     &:hover
@@ -82,7 +90,6 @@ body
 
   .wp-submenu
     background-color: $admin-color-blue !important
-    width: 200px !important
     left: 200px
 
     li
