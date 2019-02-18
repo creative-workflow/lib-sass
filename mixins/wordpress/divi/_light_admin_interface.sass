@@ -7,12 +7,24 @@ $admin-color-orange: #F5B016 !default
 body
   background-color: $admin-color-gray-light !important
 
+  .post-type-slider
+
+
 #wpwrap
   top: 40px !important
 
+// fix left menu folded
+body:not(.folded)
+  #adminmenuwrap, #adminmenuback
+    width: 200px !important
+
+  #adminmenu
+    width: 200px !important
+  .wp-submenu
+    width: 200px !important
+
 #adminmenuwrap, #adminmenuback
   background-color: $admin-color-gray-light !important
-  width: 200px !important
 
 #wpcontent
   padding-left: 0 !important
@@ -23,6 +35,9 @@ body
   padding: 20px 0 !important
   height: 70px !important
 
+  #wp-admin-bar-view, #wp-admin-bar-new_draft
+    display: none
+
   #wp-admin-bar-my-account
     a
       &:before
@@ -32,6 +47,31 @@ body
 
   li
     padding: 0 4px !important
+    &#wp-admin-bar-my-account
+      &:hover
+        background-color: white !important
+      .ab-sub-wrapper
+        background-color: white !important
+
+    &#wp-admin-bar-wp-logo
+      pointer-events: none
+      &>.ab-item .ab-icon:before
+        content: ''
+        background-image: url("images/Icons_SlideVision-07.png")
+        position: absolute
+        background-size: 180px
+        width: 200px
+        height: 200px
+        background-repeat: no-repeat
+        left: 0
+        top: 0
+
+    &#wp-admin-bar-site-name
+      pointer-events: none
+      margin-left: 180px
+
+    &#wp-admin-bar-comments, &#wp-admin-bar-new-content
+      display: none
 
   li
     &#wp-admin-bar-wp-logo
@@ -40,18 +80,20 @@ body
   a
     color: $admin-color-gray-dark !important
     &:hover
-      background-color: $admin-color-blue !important
+      background-color: white !important
 
   .ab-label, .ab-item:before, .ab-icon:before
     color: $admin-color-gray-dark !important
 
 #adminmenu
   background-color: $admin-color-gray-light !important
-  width: 200px !important
+
+  .collapse-button-label
+    &:hover
+      color: $admin-color-blue
 
   .wp-submenu
     background-color: $admin-color-blue !important
-    width: 200px !important
     left: 200px
 
     li
@@ -64,6 +106,15 @@ body
     &.menu-top:hover, &.opensub>a.menu-top, &>a.menu-top:focus
       background-color: $admin-color-blue !important
       color: white !important
+
+    a
+      &.current
+        background-color: $admin-color-blue !important
+        color: white !important
+
+        .wp-menu-image
+          &:before
+            color: white !important
 
     &.wp-has-current-submenu
       color: white !important
@@ -94,8 +145,14 @@ body
   background-color: white !important
   padding-left: 30px !important
   padding-top: 16px !important
-  box-shadow: inset 3px 3px 5px rgba(0,0,0,.1)
+  box-shadow: inset 0 0 10px rgba(0,0,0,.15)
 
+  #wpbody-content
+    .wrap
+      margin: 10px 30px 0 0px
+
+  #screen-meta-links
+    display: none
 
   #dashboard-widgets-wrap
     .postbox-container
@@ -112,19 +169,42 @@ body
     .wrap
       border: 1px solid white !important
 
+
+  #post-body-content
+    .et-pb-app-settings-button, .et-pb-app-portability-button, .handlediv
+      display: none
+
+    .hndle
+      display: none
+      box-shadow: none
+      &:before
+        display: none
+      span
+        display: none
+
   #et_pb_layout
+
     &.postbox
       +headlines
         color: $admin-color-blue !important
-        background-color: $admin-color-gray-light !important
+        background-color: white !important
+
+      #et_pb_main_container_right_click_overlay
+        box-shadow: none
 
       #et_pb_layout_controls
-        background-color: $admin-color-gray-light !important
+        background-color: white !important
+        a
+          &.et-pb-layout-buttons
+            font-size: 12px !important
+            color: $admin-color-gray-dark !important
+            background-color: white !important
 
         .et-pb-layout-buttons
           background-color: $admin-color-gray-light !important
 
       .inside
+        width: 100%
         .et_pb_section
           background-color: $admin-color-gray-light !important
 
@@ -136,6 +216,9 @@ body
               opacity: 1 !important
             &.et-pb-section-add
               color: $admin-color-gray-dark !important
+
+              .et-pb-section-add-fullwidth, .et-pb-section-add-specialty
+                display: none
 
         .et_pb_row
           a
@@ -191,10 +274,18 @@ body
 
         &.quick-edit-row
           td
-            padding: 20px 0 !important
+            padding: 20px 0 20px 20px !important
 
             .submit
               float: left !important
+
+          fieldset
+            &.inline-edit-col-right
+              clear: both
+              margin: 0
+
+        th
+          padding-left: 10px
 
         td
 
@@ -217,7 +308,7 @@ body
 
           .button
             &.cancel
-              border: 0
+              border: 1px solid $admin-color-blue
               box-shadow: none !important
               color: $admin-color-blue !important
               &:hover
@@ -312,20 +403,58 @@ body
     +headlines
       color: $admin-color-blue !important
     p
-      color: $admin-color-blue !important
+      color: $admin-color-gray-dark !important
 
     .uploader-inline
-      border: 2px dashed $admin-color-orange !important
+      border: 2px dashed $admin-color-gray-dark !important
 
     button
       &.browser
-        background-color: $admin-color-orange !important
+        background-color: $admin-color-blue !important
         color: white !important
-        border: 1px solid $admin-color-orange !important
+        border: 1px solid $admin-color-blue !important
         box-shadow: none !important
         &:hover
           background-color: white !important
-          color: $admin-color-orange !important
+          color: $admin-color-blue !important
+
+  form
+    &.media-upload-form
+
+      #drag-drop-area
+        border: 2px dashed $admin-color-gray-dark
+
+      .drag-drop-inside
+        p
+          color: $admin-color-gray-dark
+          &.drag-drop-info
+            color: $admin-color-blue
+
+        input
+          border: 1px solid $admin-color-blue
+          background-color: $admin-color-blue
+          color: white
+          box-shadow: none
+          height: 32px
+          line-height: 32px
+          &:hover
+            background-color: white
+            color: $admin-color-blue
+
+    &#your-profile
+      .submit
+        input
+          background-color: $admin-color-blue
+          color: white
+          border: 1px solid $admin-color-blue
+          box-shadow: none
+          text-shadow: none
+          height: 34px
+          line-height: 34px
+          &:hover
+            background-color: white
+            color: $admin-color-blue
+
 
   .media-toolbar
     .media-button
