@@ -1,4 +1,3 @@
-$divi-blue-color: #244d9d !default
 
 #et_pb_toggle_builder.et_pb_builder_is_used, #et_pb_fb_cta
   height: 40px !important
@@ -14,10 +13,6 @@ $divi-blue-color: #244d9d !default
   padding: 10px 20px !important
 
 
-.et-pb-option-container.et-pb-option-container--custom_css
-  textarea
-    height: 120px !important
-
 // dialog headings
 .et-pb-preview-screensize-switcher li a.active, .et-pb-options-tabs-links li.et-pb-options-tabs-links-active a,
 .et-pb-preview-screensize-switcher li a, .et-pb-options-tabs-links li a,
@@ -29,20 +24,19 @@ $divi-blue-color: #244d9d !default
 
 .et-pb-preview-screensize-switcher li a.active, .et-pb-options-tabs-links li.et-pb-options-tabs-links-active a
   background-color: #fff !important
-  color: $divi-blue-color !important
+  color: #008bdb !important
   &:hover
     background-color: #fff !important
-    color: $divi-blue-color !important
+    color: #008bdb !important
   .et-pb-reset-settings
     &::after
-      color: $divi-blue-color !important
+      color: #008bdb !important
 
 .et-pb-preview-screensize-switcher li a:hover, .et-pb-options-tabs-links li a:hover
   background-color: #fff !important
-  color: $divi-blue-color !important
+  color: #008bdb !important
 
 .et_pb_modal_settings_container
-  z-index: 99999 !important
   box-shadow: 10px 10px 48px 15px rgba(0,0,0,0.26) !important
   .et-pb-main-settings
     bottom: 40px !important
@@ -51,12 +45,12 @@ $divi-blue-color: #244d9d !default
     box-shadow: 0 -8px 21px rgba(0,0,0,.1)
 
     .et-pb-modal-save, .et-pb-modal-save-template, .et-pb-modal-preview-template
-      background-color: $divi-blue-color !important
+      background-color: #008bdb !important
       color: #fff !important
       transition: all .3s
       &:hover
         background-color: #fff !important
-        color: $divi-blue-color !important
+        color: #008bdb !important
 
     .et-pb-modal-preview-template
       border-left: 1px solid #fff !important
@@ -70,23 +64,25 @@ $divi-blue-color: #244d9d !default
 
   .et-pb-settings-heading
     background-color: #fff
-    color: $divi-blue-color !important
-    padding: 10px 26px !important
+    color: #008bdb !important
 
   .et-pb-modal-close
-    color: $divi-blue-color !important
+    color: #008bdb !important
     background-color: #fff
     padding: 20px 8px
     transition: all .3s
+    z-index: 100
     &::before
-      font-size: 40px
-      line-height: 4px
+      font-size: 60px
+      line-height: 24px
+      z-index: 100
     &:hover
       color: #fff !important
-      background-color: $divi-blue-color
+      background-color: #008bdb
+      z-index: 100
 
   .et-pb-options-tabs-links
-    background-color: $divi-blue-color !important
+    background-color: #008bdb !important
     box-shadow: 0 8px 21px rgba(0,0,0,.2)
 
   .et-pb-options-tabs
@@ -97,7 +93,7 @@ $divi-blue-color: #244d9d !default
       font-weight: 600
       font-size: 24px
       padding-bottom: 10px
-      border-bottom: 1px solid $divi-blue-color
+      border-bottom: 1px solid #008bdb
 
     .et-pb-option
       .description
