@@ -249,7 +249,11 @@ body #et_pb_layout_controls .et-pb-layout-buttons:hover
 
   #post-body-content
     .et-pb-app-settings-button, .et-pb-app-portability-button, .handlediv
-      display: none
+      // display: none
+
+    .toggle-indicator
+      &:before
+        color: $admin-color-blue !important
 
     .hndle
       display: none
@@ -645,3 +649,13 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
 .welcome-panel
   border: none
   box-shadow: none
+
+.et-core-modal-close:before, .et_pb_prompt_dont_proceed:before
+  color: $admin-color-blue !important
+
+.et_pb_prompt_buttons a.et_pb_prompt_proceed, .et_pb_prompt_modal .et_pb_prompt_buttons input.et_pb_prompt_proceed, .et_pb_prompt_modal .et_pb_prompt_buttons button.et_pb_prompt_proceed_alternative
+  background-color: $admin-color-blue !important
+  border: 1px solid $admin-color-blue !important
+  &:hover
+    background-color: white !important
+    color: $admin-color-blue !important
