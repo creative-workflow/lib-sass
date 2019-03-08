@@ -54,11 +54,11 @@ body
         margin-left: 5px
         background-repeat: no-repeat
         left: 0
-        top: 5px
+        top: 3px
 
     &#wp-admin-bar-site-name
       // pointer-events: none
-      margin-left: 180px
+      margin-left: 136px
 
     &#wp-admin-bar-comments, &#wp-admin-bar-new-content
       display: none
@@ -126,9 +126,6 @@ body .et_pb_roles_active_menu:hover, #et_pb_layout_controls .et-pb-layout-button
 body #et_pb_layout_controls .et-pb-layout-buttons:hover
   background-color: white !important
   border: 1px solid $admin-color-blue !important
-
-.et_pb_modal_settings_container .et-pb-modal-close
-  padding: 20px 8px 8px 8px !important
 
 .widefat td, .widefat th
   color: $admin-color-orange !important
@@ -203,6 +200,9 @@ body #et_pb_layout_controls .et-pb-layout-buttons:hover
 
 #adminmenu li.wp-has-submenu.wp-not-current-submenu:hover:after
   display: none !important
+
+#adminmenu .wp-submenu li
+  border: 1px solid $admin-color-blue
 
 #adminmenu .wp-submenu li a:hover
   color: white !important
@@ -638,3 +638,10 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
 
 #contextual-help-link-wrap, #screen-options-link-wrap
   border: 0
+
+#wpadminbar #wp-admin-bar-updates .ab-icon:before
+  color: $admin-color-blue !important
+
+.welcome-panel
+  border: none
+  box-shadow: none
