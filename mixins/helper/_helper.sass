@@ -60,10 +60,9 @@
 @mixin no-pointer-events
   pointer-events: none
 
-@mixin zoom-on-hover($scale: 1.03)
-  +inline-block
+@mixin zoom-on-hover($scale: 1.03, $duration: 0.4s, $easing: ease-out)
   cursor: pointer
-  +transition(transform 0.3s ease-out)
+  +transition(transform $duration $easing)
   -webkit-transform: translateZ(0)
   -webkit-font-smoothing: antialiased
   &:hover, &:focus, &:active
