@@ -22,7 +22,7 @@ body
   height: 70px !important
 
   #wp-admin-bar-view, #wp-admin-bar-new_draft
-    // display: none
+  // display: none
 
   #wp-admin-bar-my-account
     a
@@ -33,15 +33,18 @@ body
 
   li
     padding: 0 4px !important
+
     &#wp-admin-bar-my-account
       &:hover
         background-color: white !important
+
       .ab-sub-wrapper
         background-color: white !important
 
     &#wp-admin-bar-wp-logo
       pointer-events: none
-      &>.ab-item .ab-icon:before
+
+      & > .ab-item .ab-icon:before
         content: ''
         background-image: url("https://cdn.slidevision.io/www/logo.png")
         position: absolute
@@ -63,16 +66,16 @@ body
 #wpadminbar a:hover
   background-color: white
 
-#wpadminbar .ab-top-menu>li.hover>.ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu>li>.ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item, #wpadminbar:not(.mobile) .ab-top-menu>li>.ab-item:focus
+#wpadminbar .ab-top-menu > li.hover > .ab-item, #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus, #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item, #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus
   background-color: white
 
 #wpadminbar .menupop .ab-sub-wrapper, #wpadminbar .shortlink-input
   background-color: white
 
-#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar>#wp-toolbar span.ab-label, #wpadminbar>#wp-toolbar span.noticon
+#wpadminbar .ab-empty-item, #wpadminbar a.ab-item, #wpadminbar > #wp-toolbar span.ab-label, #wpadminbar > #wp-toolbar span.noticon
   color: $admin-color-blue !important
 
-.wp-admin #wpadminbar #wp-admin-bar-site-name>.ab-item:before
+.wp-admin #wpadminbar #wp-admin-bar-site-name > .ab-item:before
   color: $admin-color-blue
 
 .plugin-update-tr.active td, .plugins .active th.check-column
@@ -84,6 +87,7 @@ body
 
 #epanel-mainmenu a
   border: 1px solid white !important
+
   &:hover
     background-color: white !important
     border: 1px solid $admin-color-blue !important
@@ -127,6 +131,7 @@ body .et_pb_roles_active_menu:hover, #et_pb_layout_controls .et-pb-layout-button
 
 body #et_pb_layout_controls .et-pb-layout-buttons
   border: 1px solid white !important
+
   &:hover
     background-color: white !important
     border: 1px solid $admin-color-blue !important
@@ -136,10 +141,11 @@ body #et_pb_layout_controls .et-pb-layout-buttons
 
   li
     &#wp-admin-bar-wp-logo
-      // display: none
+  // display: none
 
   a
     color: $admin-color-gray-dark !important
+
     &:hover
       background-color: white !important
 
@@ -160,11 +166,11 @@ body #et_pb_layout_controls .et-pb-layout-buttons
     li
       a
         color: white !important
-        // left: 200px !important
+  // left: 200px !important
 
 
   li
-    &.menu-top:hover, &.opensub>a.menu-top, &>a.menu-top:focus
+    &.menu-top:hover, &.opensub > a.menu-top, & > a.menu-top:focus
       background-color: $admin-color-blue !important
       color: white !important
 
@@ -215,10 +221,11 @@ body #et_pb_layout_controls .et-pb-layout-buttons
   color: white !important
 
 #adminmenu .wp-submenu li:hover
-  background-color: rgba(white,0.2)
+  background-color: rgba(white, 0.2)
 
 #adminmenu li a.current
-  background-color: rgba(white,0.3) !important
+  background-color: rgba(white, 0.3) !important
+
   &:hover
     color: white !important
 
@@ -226,18 +233,18 @@ body #et_pb_layout_controls .et-pb-layout-buttons
   background-color: white !important
   padding-left: 30px !important
   padding-top: 12px !important
-  box-shadow: inset 0 0 10px rgba(0,0,0,.15)
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, .15)
 
   #wpbody-content
     .wrap
       margin: 10px 30px 0 0px
 
   #screen-meta-links
-    // display: none
+  // display: none
 
   #dashboard-widgets-wrap
     .postbox-container
-      // width: 80% !important
+    // width: 80% !important
 
     .postbox
       border: 0
@@ -253,7 +260,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
 
   #post-body-content
     .et-pb-app-settings-button, .et-pb-app-portability-button, .handlediv
-      // display: none
+    // display: none
 
     .toggle-indicator
       &:before
@@ -262,8 +269,10 @@ body #et_pb_layout_controls .et-pb-layout-buttons
     .hndle
       display: none
       box-shadow: none
+
       &:before
         display: none
+
       span
         display: none
 
@@ -279,6 +288,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
 
       #et_pb_layout_controls
         background-color: white !important
+
         a
           &.et-pb-layout-buttons
             font-size: 12px !important
@@ -290,20 +300,23 @@ body #et_pb_layout_controls .et-pb-layout-buttons
 
       .inside
         width: 100%
+
         .et_pb_section
           background-color: $admin-color-gray-light !important
 
           .et-pb-controls
             background-color: $admin-color-blue !important
+
           a
             &.et-pb-settings, &.et-pb-clone-section, &.et-pb-remove, &.et-pb-expand
               color: white !important
               opacity: 1 !important
+
             &.et-pb-section-add
               color: $admin-color-gray-dark !important
 
               .et-pb-section-add-fullwidth, .et-pb-section-add-specialty
-                // display: none
+        // display: none
 
         .et_pb_row
           a
@@ -321,15 +334,12 @@ body #et_pb_layout_controls .et-pb-layout-buttons
             .et_pb_module_block
               background-color: $admin-color-gray-light !important
               color: $admin-color-gray-dark !important
+
               a
                 color: $admin-color-gray-dark !important
                 opacity: 1 !important
 
   #postbox-container-1
-
-    #et_settings_meta_box
-
-
     #et_settings_meta_box, #submitdiv
       margin-bottom: 50px
       border: none
@@ -339,7 +349,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
       label
         color: $admin-color-blue
 
-      select,
+      select
         border: 1px solid $admin-color-blue
         color: $admin-color-blue
         height: 32px
@@ -349,9 +359,6 @@ body #et_pb_layout_controls .et-pb-layout-buttons
   table
     border: 0 !important
     margin-top: 50px !important
-
-    thead
-
     tbody
       tr
         &:nth-child(odd)
@@ -387,6 +394,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
             border: 1px solid $admin-color-blue !important
             box-shadow: none !important
             text-shadow: none !important
+
             &:hover
               color: $admin-color-blue !important
               background-color: white !important
@@ -396,6 +404,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
               border: 1px solid $admin-color-blue
               box-shadow: none !important
               color: $admin-color-blue !important
+
               &:hover
                 background-color: $admin-color-blue !important
                 color: white !important
@@ -421,6 +430,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
       color: white !important
       line-height: 24px
       height: 24px
+
       &:hover
         color: $admin-color-blue !important
         background-color: white !important
@@ -440,6 +450,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
       line-height: 36px
       height: 36px
       box-shadow: none !important
+
       &:hover
         color: $admin-color-blue !important
         background-color: white !important
@@ -450,10 +461,12 @@ body #et_pb_layout_controls .et-pb-layout-buttons
 
   a
     color: $admin-color-blue !important
+
     &.page-title-action
       border: 1px solid $admin-color-blue !important
       background-color: white !important
       padding: 6px 16px !important
+
       &:hover
         color: white !important
         background-color: $admin-color-blue !important
@@ -480,6 +493,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
       box-shadow: none !important
       box-shadow: 0 1px 0 #fff !important
       -webkit-box-shadow: 0 1px 0 #fff !important
+
       &:after
         color: $admin-color-blue !important
 
@@ -487,6 +501,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
 
     +headlines
       color: $admin-color-blue !important
+
     p
       color: $admin-color-gray-dark !important
 
@@ -499,6 +514,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
         color: white !important
         border: 1px solid $admin-color-blue !important
         box-shadow: none !important
+
         &:hover
           background-color: white !important
           color: $admin-color-blue !important
@@ -512,6 +528,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
       .drag-drop-inside
         p
           color: $admin-color-gray-dark
+
           &.drag-drop-info
             color: $admin-color-blue
 
@@ -522,6 +539,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
           box-shadow: none
           height: 32px
           line-height: 32px
+
           &:hover
             background-color: white
             color: $admin-color-blue
@@ -536,6 +554,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
           text-shadow: none
           height: 34px
           line-height: 34px
+
           &:hover
             background-color: white
             color: $admin-color-blue
@@ -546,6 +565,7 @@ body #et_pb_layout_controls .et-pb-layout-buttons
       background-color: $admin-color-blue !important
       color: white !important
       box-shadow: none !important
+
       &:hover
         background-color: white !important
         color: $admin-color-blue !important
@@ -557,7 +577,6 @@ body #et_pb_layout_controls .et-pb-layout-buttons
 /*button styling*/
 .wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large
   padding: 5px 25px 5px
-
 
 
 .wp-core-ui .button, .wp-core-ui .button-secondary
@@ -572,10 +591,10 @@ body #et_pb_layout_controls .et-pb-layout-buttons
   box-shadow: none !important
   color: #fff !important
   text-shadow: none !important
+
   &:hover
     background-color: white !important
     color: $admin-color-blue !important
-
 
 
 .et_pb_toggle_builder_wrapper #et_pb_toggle_builder, #et_pb_fb_cta
@@ -612,6 +631,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
 .et-core-tabs li.ui-state-active a, .et-core-tabs li a, .et-core-tabs li.ui-state-default a
   background-color: white !important
   color: $admin-color-blue !important
+
   &:hover
     background-color: $admin-color-blue !important
     color: white !important
@@ -631,7 +651,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
 #collapse-button
   color: $admin-color-orange !important
 
-.pum-tabs-container.vertical-tabs>ul.tabs>.tab.active a
+.pum-tabs-container.vertical-tabs > ul.tabs > .tab.active a
   background-color: white !important
   border: 1px solid $admin-color-blue
 
@@ -660,6 +680,7 @@ input[type=checkbox], input[type=color], input[type=date], input[type=datetime-l
 .et_pb_prompt_buttons a.et_pb_prompt_proceed, .et_pb_prompt_modal .et_pb_prompt_buttons input.et_pb_prompt_proceed, .et_pb_prompt_modal .et_pb_prompt_buttons button.et_pb_prompt_proceed_alternative
   background-color: $admin-color-blue !important
   border: 1px solid $admin-color-blue !important
+
   &:hover
     background-color: white !important
     color: $admin-color-blue !important
@@ -671,7 +692,7 @@ body #wpbody #et_pb_layout.postbox .inside .et_pb_section .et_pb_row .et-pb-row-
   border: none !important
 
 .wp-core-ui .attachment .thumbnail:after
-  box-shadow: inset 0 0 0 1px rgba($admin-color-blue,.1) !important
+  box-shadow: inset 0 0 0 1px rgba($admin-color-blue, .1) !important
 
 .view-switch a.current:before
   color: $admin-color-blue !important
@@ -684,6 +705,7 @@ body #wpbody #et_pb_layout.postbox .inside .et_pb_section .et_pb_row .et-pb-row-
 
 #wpbody form.media-upload-form .drag-drop-inside input
   color: $admin-color-blue !important
+
   &:hover
     color: $admin-color-orange !important
 
@@ -719,17 +741,19 @@ a#et_load_category_page:hover, .post-type-et_pb_layout .et-pb-portability-button
 
 #et_pb_save_roles
   background-color: white !important
+
   &:hover
     background-color: $admin-color-blue !important
     color: white !important
 
 #wpbody table tbody tr.inactive
-  background-color: rgba($admin-color-orange,.1) !important
+  background-color: rgba($admin-color-orange, .1) !important
 
 body.upload-php.eml-grid #wpbody
   top: 70px !important
 
 input.et-pb-upload-button, input.et-pb-gallery-button, .et-pb-option-container input.wp-picker-default, .et-pb-option-container .button:not(.wp-color-result), .et-pb-video-image-button
   background-color: $admin-color-blue !important
+
   &:hover
     background-color: $admin-color-blue !important

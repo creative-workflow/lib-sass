@@ -1,11 +1,11 @@
 @mixin divi-module-image($nr: '')
-	@if $nr == ''
-		.et_pb_image
-			@content
-	@else
-		.et_pb_image_#{$nr}
-			@content
+  @if $nr == ''
+    .et_pb_image
+      @content
+  @else
+    .et_pb_image_#{$nr}
+      @content
 
 @mixin divi-image-wrap
-	.et_pb_image_wrap
-		@content
+  .et_pb_image_wrap
+    @content

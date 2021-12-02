@@ -1,11 +1,11 @@
 @mixin divi-module-text($nr: '')
-	@if $nr == ''
-		.et_pb_text
-			@content
-	@else
-		.et_pb_text_#{$nr}
-			@content
+  @if $nr == ''
+    .et_pb_text
+      @content
+  @else
+    .et_pb_text_#{$nr}
+      @content
 
 @mixin divi-module-text-inner
-	.et_pb_text_inner
-		@content
+  .et_pb_text_inner
+    @content

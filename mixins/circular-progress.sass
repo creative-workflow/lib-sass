@@ -1,6 +1,6 @@
 @function circular-progress($maxPercent, $percent, $color-bar, $color-back)
-  $increment: 360 / $maxPercent
-  $half: round($maxPercent / 2)
+  $increment: calc(360 / $maxPercent)
+  $half: round(calc($maxPercent / 2))
   $background-image: ""
 
   @if $percent < $half
